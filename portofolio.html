@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - For Great Events</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #000;
+    }
+    header {
+      background-color: #d9d9d9;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px 40px;
+      font-size: 18px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      z-index: 3;
+      height: 60px;
+      box-sizing: border-box;
+    }
+    header a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #304254;
+      transition: color 0.2s;
+    }
+    header a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .logo {
+    position: fixed;
+    top: 70px;    /* logo fica logo abaixo do header de 60px + 10px de espaçamento */
+    left: 40px;
+    z-index: 4;
+    }
+    .logo img {
+    height: 180px;
+    }
+    .hero-video {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      z-index: 1;
+    }
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: 0;
+    }
+    main {
+      position: relative;
+      z-index: 2;
+    }
+    footer {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">Menu</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="portofolio.html" class="active">Portfólio</a>
+    <a href="contacto.html">Contactos</a>
+  </header>
+  <div class="logo">
+    <img src="https://fgetest.my.canva.site/_assets/media/05e7b27ba0ad23e57c5de0ab63ee5221.png" alt="Logo FGE">
+  </div>
+  <main>
+    <section class="hero-video">
+      <video autoplay muted loop class="background-video">
+        <source src="portofolio.mov" type="video/mp4">
+      </video>
+      <!-- Conteúdo específico do portfólio pode ser adicionado aqui -->
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 For Great Events. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - FGE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: linear-gradient(to bottom, #dee5f2, #e6ebf5);
+    }
+    header {
+      background-color: #d9d9d9;
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 40px;
+      font-size: 18px;
+    }
+    header a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #304254;
+    }
+    header a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+/* Adicione ao seu <style> */
+    .logo-fixa-abaixo-video {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 3;
+    }
+    .logo-fixa-abaixo-video img {
+    height: 150px;
+    margin-left: 40px;
+    }
+    .stage {
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        min-height: 320px;
+    }
+    .podium {
+        width: 420px;
+        height: 70px;
+        background: linear-gradient(180deg, #fff 60%, #b6c6e6 100%);
+        border-radius: 50% / 60%;
+        box-shadow:
+        0 10px 0 #92aaff,
+        0 20px 0 #d9e4ff,
+        0 30px 40px rgba(80,100,180,0.15);
+        position: relative;
+        z-index: 1;
+        margin-top: -20px;
+        border: 2px solid #b6c6e6;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .podium::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: -18px;
+        transform: translateX(-50%);
+        width: 180px;
+        height: 24px;
+        background: radial-gradient(ellipse at center, #b6c6e6 60%, transparent 100%);
+        opacity: 0.6;
+        border-radius: 50%;
+        z-index: 0;
+    }
+    .card {
+        width: 420px;
+        background: white;
+        border-radius: 12px;
+        padding: 28px 28px 20px 28px;
+        margin-bottom: -35px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+        transform: rotate(-0.5deg);
+        position: relative;
+        z-index: 2;
+        border: 1.5px solid #b6c6e6;
+    }
+    .card::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 80px;
+        height: 80px;
+        background: white;
+        border-bottom-right-radius: 100%;
+        box-shadow: -10px 10px 10px rgba(0,0,0,0.05);
+        transform: rotate(-3deg);
+        z-index: 1;
+    }
+    .card p {
+      margin: 10px 0;
+    }
+    .hashtags {
+      color: #0077b5;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">Menu</a>
+    <a href="sobre.html" class="active">Sobre nós</a>
+    <a href="portofolio.html">Portfólio</a>
+    <a href="contacto.html">Contactos</a>
+  </header>
+<div style="position: relative; width: 100vw; margin-top: 60px; height: 70vh; overflow: hidden;">
+  <video src="carlos.mov" autoplay muted loop
+    style="position: absolute; left: 0; top: -30vh; width: 100vw; height: 100vh; object-fit: cover;"></video>
+  <div style="position: absolute; top: 0; left: 0; z-index: 2; padding: 20px;">
+    <img src="https://fgetest.my.canva.site/_assets/media/05e7b27ba0ad23e57c5de0ab63ee5221.png" alt="Logo FGE" style="height: 80px;">
+  </div>
+</div>
+    <div class="logo-fixa-abaixo-video">
+    <img src="https://fgetest.my.canva.site/_assets/media/05e7b27ba0ad23e57c5de0ab63ee5221.png" alt="Logo FGE">
+    </div>
+
+  <div class="stage">
+    <div class="card">
+      <p><strong>fge_forgreatevents</strong> 🚀 Bem-vindos à FGE - For Great Events! 🎥</p>
+      <p>Somos especialistas em produção de eventos, transformando ideias em experiências memoráveis. Seja um evento corporativo, uma ativação de marca ou uma outra produção, estamos aqui para fazer acontecer!</p>
+      <p>🔹 Event Solutions 360</p>
+      <p>🔹 Criatividade, tecnologia e execução excepcional</p>
+      <p>🔹 O teu parceiro para eventos de impacto</p>
+      <p>Segue-nos para acompanhar os nossos projetos! → <span class="hashtags">#forgreatevents #eventsolutions #wedogreatevents</span></p>
+    </div>
+    <div class="podium"></div>
+  </div>
+
+</body>
+</html>
